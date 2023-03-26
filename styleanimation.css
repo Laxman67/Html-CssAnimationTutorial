@@ -1,0 +1,61 @@
+
+.container {
+    display: inline-block;
+    top: 200px;
+    left: 580px;
+    position: absolute;
+    background-color: aquamarine;
+  }
+  body {
+    text-align: center;
+    color: aliceblue;
+    background-color: #000;
+  }
+  p {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ring {
+    width: 150px;
+    height: 150px;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .ring:nth-child(1) {
+    border-top-width: 10px;
+    border-color: rgb(221, 22, 22);
+    animation: rotation1 5s linear infinite;
+  }
+
+  @keyframes rotation1 {
+    30% {
+      border-right-width: 10px;
+      border-top-width: 0px;
+      border-left-width: 0px;
+      border-bottom-width: 0px;
+      border-color: blue;
+    }
+    60% {
+      border-right-width: 0px;
+      border-top-width: 0px;
+      border-left-width: 0px;
+      border-bottom-width: 10px;
+      border-color: rgb(236, 32, 145);
+    }
+
+    90% {
+      border-right-width: 0px;
+      border-top-width: 0px;
+      border-left-width: 20px;
+      border-bottom-width: 0px;
+      border-color: rgb(219, 174, 27);
+    }
+  }
